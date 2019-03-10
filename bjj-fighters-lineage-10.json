@@ -1,0 +1,793 @@
+[{
+  "firstName": "Alan",
+  "lastName": "Marques",
+  "nickname": "Gumby",
+  "team": "Heroes Martial Arts/Ralph Gracie Academy",
+  "url": "/?p=5592",
+  "id": "5592",
+  "lineage": "Lineage:  Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > Ralph Gracie > Alan Marques"
+}, {
+  "firstName": "Marcio",
+  "lastName": "Rodrigues",
+  "nickname": "",
+  "team": "Equipe Marcio Rodrigues",
+  "url": "/?p=5609",
+  "id": "5609",
+  "lineage": "Lineage: Mitsuyo Maeda > Luiz França > Oswaldo Fadda > Irami Rocha > Márcio Rodrigues"
+}, {
+  "firstName": "Venla",
+  "lastName": "Luukkonen",
+  "nickname": "",
+  "team": "Hilti BJJ",
+  "url": "/?p=5410",
+  "id": "5410",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Helio Gr. > Carlson Gr. > Murilo Bustamante > Pedro Duarte > Venla Luukkonen"
+}, {
+  "firstName": "Kevin",
+  "lastName": "Mahecha",
+  "nickname": "",
+  "team": "ATT",
+  "url": "/?p=6368",
+  "id": "6368",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Carlson G. >André Pederneiras > João Roque > Jonatas Gurgel > Kevin Mahecha"
+}, {
+  "firstName": "Antonio",
+  "lastName": "Passos",
+  "nickname": "Tony",
+  "team": "Atos",
+  "url": "/?p=5320",
+  "id": "5320",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Ricardo De La Riva > (Moacir Omena >) Tony Passos"
+}, {
+  "firstName": "Gustavo",
+  "lastName": "Batista",
+  "nickname": "Braguinha",
+  "team": "Ns Brotherhood",
+  "url": "/?p=8357",
+  "id": "8357",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez> Roberto Godoi > Marco Barbosa > Cicero Costha > Leandro Lo > Gustavo Batista"
+}, {
+  "firstName": "Jason",
+  "lastName": "Gagnon",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=6328",
+  "id": "6328",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Alexandre Paiva > Fernando Terere > Rubens Charles > Jason Gagnon"
+}, {
+  "firstName": "Tomoyuki",
+  "lastName": "Hashimoto",
+  "nickname": "Passport",
+  "team": "Carpe Diem",
+  "url": "/?p=6060",
+  "id": "6060",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Carlos Gracie Junior > Yuki Nakai > Tomoyuki Hashimoto"
+}, {
+  "firstName": "Arthur",
+  "lastName": "Sousa",
+  "nickname": "AJ",
+  "team": "AJSBJJ/ATT",
+  "url": "/?p=5747",
+  "id": "5747",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Crolin Gracie > Jorge Popovitch > Pablo Popovitch > AJ Sousa"
+}, {
+  "firstName": "Evandro",
+  "lastName": "Nunes",
+  "nickname": "",
+  "team": "Gracie Jiu Jitsu",
+  "url": "/?p=6324",
+  "id": "6324",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr > Carlos G. Jr > Ryan Gracie > Márcio Barão > Evandro Nunes"
+}, {
+  "firstName": "Luiza",
+  "lastName": "Monteiro",
+  "nickname": "",
+  "team": "Brotherhood",
+  "url": "/?p=5263",
+  "id": "5263",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Élcio Figueiredo > Rodrigo Cavaca > Luiza Monteiro"
+}, {
+  "firstName": "Arnaldo",
+  "lastName": "Maidana",
+  "nickname": "",
+  "team": "Checkmat",
+  "url": "/?p=6337",
+  "id": "6337",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez > Roberto Godoi > Marco Barbosa > Gilberto Gabas > Arnaldo Maidana"
+}, {
+  "firstName": "Thiago",
+  "lastName": "Abreu",
+  "nickname": "Baiano",
+  "team": "Checkmat",
+  "url": "/?p=5909",
+  "id": "5909",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Élcio Figueiredo > Rodrigo Cavaca > Thiago Abreu"
+}, {
+  "firstName": "Pedro",
+  "lastName": "Araujo",
+  "nickname": "Pedrao",
+  "team": "Gracie Barra",
+  "url": "/?p=6359",
+  "id": "6359",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Helio Gracie > Carlos Gracie Jr > Vinicius Magalhães > Pedro Araújo"
+}, {
+  "firstName": "Pirillo",
+  "lastName": "Roriz",
+  "nickname": "",
+  "team": "Gracie Barra",
+  "url": "/?p=6284",
+  "id": "6284",
+  "lineage": "Lineage: Takeo Iano > Francisco Sá > Ricardo Pinho > Pirillo Roriz"
+}, {
+  "firstName": "Osvaldo",
+  "lastName": "Moizinho",
+  "nickname": "Queixinho",
+  "team": "",
+  "url": "/?p=5414",
+  "id": "5414",
+  "lineage": "Lineage 1: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Francisco Mansur > Augusto Mendes > Osvaldo Moizinho"
+}, {
+  "firstName": "Paulo",
+  "lastName": "Rezende",
+  "nickname": "Paulao",
+  "team": "Zenith BJJ",
+  "url": "/?p=6006",
+  "id": "6006",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie. > Fernando “Pinduka“ > Leonardo Castello Branco >Paulo Rezende"
+}, {
+  "firstName": "Luigi",
+  "lastName": "Mondelli",
+  "nickname": "",
+  "team": "ATT",
+  "url": "/?p=6170",
+  "id": "6170",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie > Crézio de Souza > André Almeida > Luigi Mondelli"
+}, {
+  "firstName": "Ibrahim",
+  "lastName": "Inal",
+  "nickname": "",
+  "team": "Checkmat",
+  "url": "/?p=5473",
+  "id": "5473",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Leonardo Vieira > İbrahim İnal"
+}, {
+  "firstName": "Jonathan",
+  "lastName": "Satava",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=6354",
+  "id": "6354",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Fabio Gurgel >Marcelo Garcia > Jonathan Satava"
+}, {
+  "firstName": "Vinicius",
+  "lastName": "Cruz",
+  "nickname": "Vinicinho",
+  "team": "Carlson Gracie",
+  "url": "/?p=5157",
+  "id": "5157",
+  "lineage": "Lineage:  Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Vinícius Cruz"
+}, {
+  "firstName": "Karen",
+  "lastName": "Antunes",
+  "nickname": "",
+  "team": "Checkmat",
+  "url": "/?p=6149",
+  "id": "6149",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Helio G. > Rolls G. > Romero Cavalcanti > L. Vieira > Mayko Araújo > Karen Antunes"
+}, {
+  "firstName": "Mansher",
+  "lastName": "Khera",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=6095",
+  "id": "6095",
+  "lineage": "Lineage: M. Maeda > C. Gracie > H. Gracie > R. Gracie > R. Cavalcanti > F. Gurgel >Marcelo Garcia > Mansher Khera"
+}, {
+  "firstName": "Djalma",
+  "lastName": "Spindola",
+  "nickname": "",
+  "team": "Ribeiro JJ",
+  "url": "/?p=6196",
+  "id": "6196",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Admilson Brites > Rodolfo Azevedo > Djalma Spindola"
+}, {
+  "firstName": "Wilson",
+  "lastName": "Reis",
+  "nickname": "",
+  "team": "G13",
+  "url": "/?p=5992",
+  "id": "5992",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez >Roberto Godoi > Wilson Reis"
+}, {
+  "firstName": "Thiago",
+  "lastName": "Gaia",
+  "nickname": "",
+  "team": "Barbosa JJ (B9)",
+  "url": "/?p=5926",
+  "id": "5926",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez >Roberto Godoi > Marco Barbosa > Thiago Gaia"
+}, {
+  "firstName": "Rosangela",
+  "lastName": "Conceicao",
+  "nickname": "Zanza",
+  "team": "",
+  "url": "/?p=5162",
+  "id": "5162",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Alvaro Barreto > Sylvio Behring > Rosângela Conceição"
+}, {
+  "firstName": "Victor",
+  "lastName": "Honorio",
+  "nickname": "",
+  "team": "GF Team",
+  "url": "/?p=5509",
+  "id": "5509",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Walter Guimaraes > Cezar Guimarães > José Honório > Victor Honório"
+}, {
+  "firstName": "Mahamed",
+  "lastName": "Aly",
+  "nickname": "",
+  "team": "Team Lloyd Irvin",
+  "url": "/?p=5842",
+  "id": "5842",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Jorge Pereira > Leo Dalla > Lloyd Irvin > Mahamed Aly"
+}, {
+  "firstName": "Daniel",
+  "lastName": "Wanderley",
+  "nickname": "Cachorrao",
+  "team": "Carlson Gracie",
+  "url": "/?p=5900",
+  "id": "5900",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Gutenberg Melo > Daniel Wanderley"
+}, {
+  "firstName": "Dean",
+  "lastName": "Liebenberg",
+  "nickname": "Cu Vermelho",
+  "team": "Cia Paulista",
+  "url": "/?p=5391",
+  "id": "5391",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Valdomiro Junior > Milton Maximiliano > Carlos Vieira > Dean Liebenberg"
+}, {
+  "firstName": "Bruno",
+  "lastName": "Paulista",
+  "nickname": "Mamute",
+  "team": "",
+  "url": "/?p=5793",
+  "id": "5793",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Crolin Gracie > Alexandre de Souza > Bruno Paulista"
+}, {
+  "firstName": "Lucas",
+  "lastName": "Pinheiro",
+  "nickname": "Bad Boy",
+  "team": "Checkmat",
+  "url": "/?p=6043",
+  "id": "6043",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Osvaldo Alves > Faustino Neto > Carlos Holanda > Lucas Pinheiro"
+}, {
+  "firstName": "Carlson",
+  "lastName": "Gracie Junior",
+  "nickname": "Carlsinho",
+  "team": "Carlson Gracie",
+  "url": "/?p=5998",
+  "id": "5998",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Carlson Gracie Júnior"
+}, {
+  "firstName": "Manuel",
+  "lastName": "Ribamar",
+  "nickname": "Riba",
+  "team": "New School Brotherhood",
+  "url": "/?p=5636",
+  "id": "5636",
+  "lineage": "Lineage 1: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Rodrigo Pinheiro > Manuel Ribamar"
+}, {
+  "firstName": "Gustavo",
+  "lastName": "Pires",
+  "nickname": "Siri",
+  "team": "Gracie Barra",
+  "url": "/?p=5726",
+  "id": "5726",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlos Gracie Junior > Gustavo Pires"
+}, {
+  "firstName": "Fabio",
+  "lastName": "Nascimento",
+  "nickname": "Negao",
+  "team": "Lotus Clube",
+  "url": "/?p=5873",
+  "id": "5873",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > George Gracie > Octávio de Almeida > Moises Muradi > Fábio Nascimento"
+}, {
+  "firstName": "Guilherme",
+  "lastName": "Augusto",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=5417",
+  "id": "5417",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > George Gracie > Octávio de Almeida > Moises Murad > Everdan Olegário > Guilherme Augusto"
+}, {
+  "firstName": "Nic",
+  "lastName": "Ruben Nikolaison",
+  "nickname": "",
+  "team": "Frontline",
+  "url": "/?p=6033",
+  "id": "6033",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Helio G. >Carlson G. > Ricardo Libório > Eduardo Rios > Nic Ruben"
+}, {
+  "firstName": "Carlos",
+  "lastName": "Rollyson",
+  "nickname": "",
+  "team": "Carlson Gracie/Alliance",
+  "url": "/?p=5223",
+  "id": "5223",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Carlos Rollyson"
+}, {
+  "firstName": "Ghazaleh",
+  "lastName": "Parman",
+  "nickname": "Gazzy",
+  "team": "",
+  "url": "/?p=6046",
+  "id": "6046",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Andre Pederneiras > John Lewis > Gazzy Parman"
+}, {
+  "firstName": "Emyr",
+  "lastName": "Bussade",
+  "nickname": "Shark",
+  "team": "ATT",
+  "url": "/?p=6311",
+  "id": "6311",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Ricardo Libório > Emyr Bussade"
+}, {
+  "firstName": "Vinicius",
+  "lastName": "Amaral",
+  "nickname": "",
+  "team": "Game Fight",
+  "url": "/?p=6002",
+  "id": "6002",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie (> Walter Guimarães > César Guimarães) > Vinicius Amaral"
+}, {
+  "firstName": "Wellington",
+  "lastName": "Luis",
+  "nickname": "Alemao",
+  "team": "New Brotherhood",
+  "url": "/?p=5756",
+  "id": "5756",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez> Roberto Godoi > Marco Barbosa > Cicero Costha > Wellington Luís"
+}, {
+  "firstName": "Rodnei",
+  "lastName": "Barbosa",
+  "nickname": "Roy",
+  "team": "Zenith JJ",
+  "url": "/?p=6258",
+  "id": "6258",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie. > Fernando “Pinduka” > Leonardo Castello Branco > Rodnei Barbosa"
+}, {
+  "firstName": "Alex",
+  "lastName": "Paz",
+  "nickname": "Negao",
+  "team": "Emirates Team",
+  "url": "/?p=6286",
+  "id": "6286",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Murilo Bustamante/Ricardo Libório > Alex Paz"
+}, {
+  "firstName": "Hiago",
+  "lastName": "George",
+  "nickname": "",
+  "team": "PSLPB Cicero Costha",
+  "url": "/?p=6151",
+  "id": "6151",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez> Roberto Godoi > Marco Barbosa > Cicero Costha > Hiago George"
+}, {
+  "firstName": "Gary",
+  "lastName": "Tonon",
+  "nickname": "",
+  "team": "Renzo Gracie Academy",
+  "url": "/?p=5649",
+  "id": "5649",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > Renzo Gracie > Ricardo Almeida (> Tom deBlass) > Garry Tonon"
+}, {
+  "firstName": "Ataide",
+  "lastName": "Ludgero Junior",
+  "nickname": "",
+  "team": "Team Constrictor",
+  "url": "/?p=6081",
+  "id": "6081",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Armando Wridt > Ataíde Junior"
+}, {
+  "firstName": "Herbert",
+  "lastName": "Burns",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=5453",
+  "id": "5453",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Andre Pederneiras > Rafael Fofitio > (Gilbert Burns >) Herbert Burns"
+}, {
+  "firstName": "Dominika",
+  "lastName": "Obelenyte",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=5229",
+  "id": "5229",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Fabio Gurgel > Marcelo Garcia > Dominyka Obelenyte"
+}, {
+  "firstName": "Deborah",
+  "lastName": "Maxwell",
+  "nickname": "DC",
+  "team": "",
+  "url": "/?p=5854",
+  "id": "5854",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Saulo Ribeiro > DC Maxwell"
+}, {
+  "firstName": "Sophia",
+  "lastName": "McDermott Drysdale",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6236",
+  "id": "6236",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Leonardo Vieira > Robert Drysdale > Sophia Drysdale"
+}, {
+  "firstName": "Isaac",
+  "lastName": "Doederlein",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=6103",
+  "id": "6103",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Alexandre Paiva >Fernando Augusto > Rubens Charles > Isaac Doederlein"
+}, {
+  "firstName": "Paulo",
+  "lastName": "Guillobel",
+  "nickname": "",
+  "team": "Ribeiro Jiu Jitsu Association",
+  "url": "/?p=5785",
+  "id": "5785",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Jorge Pereira > Paulo Guillobel"
+}, {
+  "firstName": "Steve",
+  "lastName": "Maxwell",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=5751",
+  "id": "5751",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Relson Gracie > Steve Maxwell"
+}, {
+  "firstName": "Paulo",
+  "lastName": "Sergio",
+  "nickname": "",
+  "team": "PS Phoenix JJ",
+  "url": "/?p=6276",
+  "id": "6276",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Paulo Sergio"
+}, {
+  "firstName": "Rodrigo",
+  "lastName": "Freitas",
+  "nickname": "",
+  "team": "Freitas JJ",
+  "url": "/?p=5930",
+  "id": "5930",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Jr > Aldo Januário > Rodrigo Freitas"
+}, {
+  "firstName": "Beneil",
+  "lastName": "Dariush",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=5365",
+  "id": "5365",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Crolin Gracie > Alexandre de Souza > Bruno Paulista > Beneil Dariush"
+}, {
+  "firstName": "Carlos",
+  "lastName": "Barreto",
+  "nickname": "Carlao",
+  "team": "BTT",
+  "url": "/?p=6203",
+  "id": "6203",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie> Sergio Souza > Carlos Barreto"
+}, {
+  "firstName": "Jorge",
+  "lastName": "Pereira",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=5869",
+  "id": "5869",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Jorge Pereira"
+}, {
+  "firstName": "Carlos",
+  "lastName": "Rosado",
+  "nickname": "",
+  "team": "Carlson Gracie",
+  "url": "/?p=5135",
+  "id": "5135",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Carlos Rosado"
+}, {
+  "firstName": "Itallo",
+  "lastName": "Vilardo",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6379",
+  "id": "6379",
+  "lineage": "Lineage: M. Maeda > Carlos Gracie > Carlson Gracie > F. Pinduka > Leo Castello Branco > Ítallo Vilardo"
+}, {
+  "firstName": "Chris",
+  "lastName": "Haueter",
+  "nickname": "",
+  "team": "Combat Base",
+  "url": "/?p=5858",
+  "id": "5858",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Jr > Rigan Machado > Chris Haueter"
+}, {
+  "firstName": "Ailson",
+  "lastName": "Brites",
+  "nickname": "Jucao",
+  "team": "Equipe Jucão",
+  "url": "/?p=6246",
+  "id": "6246",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Jr. > Ailson Brites"
+}, {
+  "firstName": "Chris",
+  "lastName": "Holdsworth",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6395",
+  "id": "6395",
+  "lineage": "Lineage: M. Maeda > C. Gracie > Carlson Gracie > A. Pederneiras > J. Lewis > Marc Laimon > Chris Holdsworth"
+}, {
+  "firstName": "Marcel",
+  "lastName": "Golcalves",
+  "nickname": "",
+  "team": "Fight Sports",
+  "url": "/?p=6419",
+  "id": "6419",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Francisco Albuquerque (Toco) > Roberto Abreu > Marcel Gonçalves"
+}, {
+  "firstName": "Jared",
+  "lastName": "Dopp",
+  "nickname": "",
+  "team": "Lovato Jr.",
+  "url": "/?p=5861",
+  "id": "5861",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlos Gracie Junior > Carlos Machado > Rafael Lovato Junior > Jared Dopp"
+}, {
+  "firstName": "Michael",
+  "lastName": "Musumeci",
+  "nickname": "Mikey",
+  "team": "",
+  "url": "/?p=5447",
+  "id": "5447",
+  "lineage": "Lineage 1: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Andre Pederneiras > Rafael Fofitio > Gilbert Burns > Michael Musumeci"
+}, {
+  "firstName": "Gustavo",
+  "lastName": "Dias Elias",
+  "nickname": "",
+  "team": "Gracie Humaita",
+  "url": "/?p=4177",
+  "id": "4177",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Cristiano Marcello > Ocimar Costa >Gustavo Dias"
+}, {
+  "firstName": "Jamie",
+  "lastName": "Cruz",
+  "nickname": "",
+  "team": "Renzo Gracie Academy",
+  "url": "/?p=5617",
+  "id": "5617",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlos Gracie Jr > Renzo Gracie > Jamie Cruz"
+}, {
+  "firstName": "Ruan",
+  "lastName": "Oliveira",
+  "nickname": "",
+  "team": "Soul Fighters",
+  "url": "/?p=6375",
+  "id": "6375",
+  "lineage": "Lineage 1: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Roberto Traven >Múzio de Angelis > Ruan de Oliveira"
+}, {
+  "firstName": "Lucas",
+  "lastName": "Daniel Barbosa",
+  "nickname": "Hulk",
+  "team": "Atos",
+  "url": "/?p=5655",
+  "id": "5655",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie sr > Reyson Gracie > Osvaldo Alves > Pascoal Duarte > Diego Lopes > André Fabiano > Lucas Barbosa"
+}, {
+  "firstName": "Wander",
+  "lastName": "Braga",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6084",
+  "id": "6084",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Jorge Pereira > Wander Braga"
+}, {
+  "firstName": "Emily",
+  "lastName": "Kwok",
+  "nickname": "",
+  "team": "MGinAction/Princeton BJJ",
+  "url": "/?p=5578",
+  "id": "5578",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > Renzo Gracie > Ricardo Almeida > Emily Kwok"
+}, {
+  "firstName": "Jose Tiago",
+  "lastName": "Barros",
+  "nickname": "",
+  "team": "PSLPB",
+  "url": "/?p=5789",
+  "id": "5789",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring > Waldomiro Perez> Roberto Godoi > Marco Barbosa > Cicero Costha > Tiago Barros"
+}, {
+  "firstName": "Adriano",
+  "lastName": "Moraes",
+  "nickname": "",
+  "team": "Team Constrictor",
+  "url": "/?p=6054",
+  "id": "6054",
+  "lineage": "Lineage:  Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Armando Wridt > Ataíde Junior > Adriano Moraes"
+}, {
+  "firstName": "Brian",
+  "lastName": "Mahecha",
+  "nickname": "",
+  "team": "ATT",
+  "url": "/?p=6366",
+  "id": "6366",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Carlson Gracie >André Pederneiras > João Roque > Jonatas Gurgel > Brian Mahecha"
+}, {
+  "firstName": "Louis",
+  "lastName": "Vintaloro",
+  "nickname": "",
+  "team": "Performance Jiu-Jitsu",
+  "url": "/?p=5549",
+  "id": "5549",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Louis Vintaloro"
+}, {
+  "firstName": "Andre",
+  "lastName": "Glodzinski",
+  "nickname": "",
+  "team": "Cia Paulista",
+  "url": "/?p=5820",
+  "id": "5820",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Marcelo Behring >Valdomiro Junior > Milton Maximiliano Trombini > André Glodzinski"
+}, {
+  "firstName": "Sebastian",
+  "lastName": "Lalli",
+  "nickname": "",
+  "team": "Checkmat",
+  "url": "/?p=5523",
+  "id": "5523",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Ricardo De La Riva > Carlos Lima > Sebastian Lalli"
+}, {
+  "firstName": "Andre",
+  "lastName": "Motta",
+  "nickname": "Andrezinho",
+  "team": "Nova Uniao",
+  "url": "/?p=5206",
+  "id": "5206",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Andre Pederneiras > Andre Motta"
+}, {
+  "firstName": "Ricco",
+  "lastName": "Rodriguez",
+  "nickname": "Suave",
+  "team": "",
+  "url": "/?p=6167",
+  "id": "6167",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Carlos Gracie Jr. > Jean Jacques Machado > Ricco Rodriguez"
+}, {
+  "firstName": "Lucas",
+  "lastName": "Rocha",
+  "nickname": "",
+  "team": "Gracie Barra",
+  "url": "/?p=5660",
+  "id": "5660",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > Jose Olimpio > Lucas Rocha"
+}, {
+  "firstName": "Aldo",
+  "lastName": "Januario",
+  "nickname": "Caveirinha",
+  "team": "Caveirinha JJ Family",
+  "url": "/?p=6186",
+  "id": "6186",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlos Gracie Jr. > Aldo Januário"
+}, {
+  "firstName": "Faisal",
+  "lastName": "Al Kitbe",
+  "nickname": "",
+  "team": "Emirates Team",
+  "url": "/?p=6301",
+  "id": "6301",
+  "lineage": "Lineage 1: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Murilo Bustamante/Ricardo Libório > Alex Paz > Faisal Al Ketbi"
+}, {
+  "firstName": "Thomas",
+  "lastName": "DeBlass",
+  "nickname": "Tom",
+  "team": "",
+  "url": "/?p=5324",
+  "id": "5324",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > Renzo Gracie > Ricardo Almeida > Tom DeBlass"
+}, {
+  "firstName": "Everdan",
+  "lastName": "Olegario",
+  "nickname": "Mestre Dan",
+  "team": "Alliance",
+  "url": "/?p=5814",
+  "id": "5814",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Reyson Gracie > Osvaldo Alves > Luis Dagmar > André Galvão > Everdan Olegário"
+}, {
+  "firstName": "Felicia",
+  "lastName": "Oh",
+  "nickname": "",
+  "team": "Machado JJ",
+  "url": "/?p=5883",
+  "id": "5883",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Carlos Gracie Junior > Jean Jacques Machado > Felicia Oh"
+}, {
+  "firstName": "Steve",
+  "lastName": "da Silva",
+  "nickname": "Suga Pop",
+  "team": "Nova Uniao",
+  "url": "/?p=6064",
+  "id": "6064",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > André Pederneiras > John Lewis > Steve da Silva"
+}, {
+  "firstName": "Isaque",
+  "lastName": "Paiva",
+  "nickname": "Boia",
+  "team": "Saikoo JJ",
+  "url": "/?p=5715",
+  "id": "5715",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Royler Gracie > Nilson Liboni > Massao Shinkai/Daniel Shinkai > Isaque Paiva"
+}, {
+  "firstName": "Tanner",
+  "lastName": "Rice",
+  "nickname": "",
+  "team": "Rice Brothers",
+  "url": "/?p=6156",
+  "id": "6156",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rolls Gracie > Romero Cavalcanti > Alexandre Paiva>Fernando Augusto > Rubens Charles > Tanner Rice"
+}, {
+  "firstName": "Elan",
+  "lastName": "Santiago",
+  "nickname": "",
+  "team": "Alliance",
+  "url": "/?p=6158",
+  "id": "6158",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie> Sergio Souza > Mauro Chueng > Elan Santiago"
+}, {
+  "firstName": "Alison",
+  "lastName": "Trembley",
+  "nickname": "",
+  "team": "BTT",
+  "url": "/?p=6227",
+  "id": "6227",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Carlson Gracie > Murilo Bustamante > Fabio Holanda > Ben Meireles > Peter Tremblay > Alison Tremblay"
+}, {
+  "firstName": "Leonardo",
+  "lastName": "Dalla",
+  "nickname": "Leo",
+  "team": "Big Brothers",
+  "url": "/?p=6403",
+  "id": "6403",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Rickson Gracie > Jorge Pereira > Leo Dalla"
+}, {
+  "firstName": "Reylson",
+  "lastName": "Gracie",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6041",
+  "id": "6041",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Reylson Gracie"
+}, {
+  "firstName": "Joaquina",
+  "lastName": "Bomfim",
+  "nickname": "Jiu-quina",
+  "team": "Gracie Barra",
+  "url": "/?p=5634",
+  "id": "5634",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie Sr. > Helio Gracie > Carlos Gracie Junior > José Olímpio > Joaquina Bonfim"
+}, {
+  "firstName": "Diego",
+  "lastName": "Borges",
+  "nickname": "",
+  "team": "Zenith JJ",
+  "url": "/?p=6253",
+  "id": "6253",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie sr > Reyson Gracie > Osvaldo Alves > José Augusto > Diego Borges"
+}, {
+  "firstName": "Suyan",
+  "lastName": "Queiroz",
+  "nickname": "",
+  "team": "",
+  "url": "/?p=6176",
+  "id": "6176",
+  "lineage": "Lineage: Mitsuyo Maeda > Carlos Gracie > Helio Gracie > Carlson Gracie > Suyan Queiroz"
+}]
