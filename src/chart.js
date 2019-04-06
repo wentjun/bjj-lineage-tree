@@ -32,70 +32,11 @@ class LineageTree {
 
     const tree = d3.cluster()
       .size([2 * Math.PI, radius - 100]);
-    //.nodeSize([10, 162.5])
-    //data.children.forEach(collapse);
+
     const root = tree(d3.hierarchy(data)
       .sort((a, b) => (a.height - b.height) || a.data.name.localeCompare(b.data.name)));
     root.children.forEach(collapse);
-
-    /*
-    const svg = d3.select('#tree')
-      .attr('width', width)
-      .attr('height', width)
-      .style('padding', '10px')
-      .style('box-sizing', 'border-box')
-      .style('font', '10px sans-serif');
-
-    const g = svg.append('g')
-      .attr('transform', `translate(${radius},${radius})`);
-
-    const link = g.append('g')
-      .attr('fill', 'none')
-      .attr('stroke', '#555')
-      .attr('stroke-opacity', 0.4)
-      .attr('stroke-width', 1.5)
-      .selectAll('path')
-      .data(root.links())
-      .enter()
-      .append('path')
-      .attr('d', d3.linkRadial()
-        .angle(d => d.x)
-        .radius(d => d.y));
-
-    const node = g.append('g')
-      .attr('stroke-linejoin', 'round')
-      .attr('stroke-width', 3)
-      .selectAll('g')
-      .data(root.descendants()
-        .reverse())
-      .enter()
-      .append('g')
-      .attr('transform', d => `
-        rotate(${d.x * 180 / Math.PI - 90})
-        translate(${d.y},0)
-      `);
-
-    node.append('circle')
-      .attr('fill', d => d.children ? '#555' : '#999')
-      .attr('r', 2.5);
-
-    node.append('text')
-      .attr('dy', '0.31em')
-      .attr('x', d => d.x < Math.PI === !d.children ? 6 : -6)
-      .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
-      .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
-      .text(d => d.data.name)
-      .filter(d => d.children)
-      .clone(true)
-      .lower()
-      .attr('stroke', 'white');
-      */
     //document.body.appendChild(svg.node());
-
-
-    //return svg.node();
-
-    //const root = data;
     root.x0 = height / 2;
     root.y0 = 0;
     const gNode = d3.select('#tree')
@@ -109,22 +50,13 @@ class LineageTree {
       .attr('stroke', '#555')
       .attr('stroke-opacity', 0.4)
       .attr('stroke-width', 1.5);
-    /*
-    root.descendants()
-      .forEach((d, i) => {
-        d.id = i;
-        //d._children = d.children;
-        //if (d.depth && d.data.name.length !== 7) d.children = null;
-      });*/
+
     update(root);
 
     d3.select('#tree')
-      //.style('height', '800px')
-      //.attr('width', width)
       .attr('width', '100%')
       .attr('height', '100%')
       .attr('viewBox', `-${radius} -${radius-50} ${radius * 2} ${radius * 2}`)
-    //.attr('transform', `translate(${radius/2},${radius/2})`);
 
     function update(source) {
       console.log(source)
@@ -158,10 +90,10 @@ class LineageTree {
       // Enter any new nodes at the parent's previous position.
       const nodeEnter = node.enter()
         .append('g')
-        .attr('transform', d => `
+        /*.attr('transform', d => `
           rotate(${d.x * 180 / Math.PI - 90})
           translate(${d.y},0)
-        `)
+        `)*/
         //.attr('fill-opacity', 0)
         //.attr('stroke-opacity', 0)
         /*.on('click', d => {
@@ -177,8 +109,6 @@ class LineageTree {
       nodeEnter.append('text')
         .attr('dy', '0.31em')
         .attr('x', d => d.x < Math.PI === !d.children ? 6 : -6)
-        //.attr('x', d => d._children ? -6 : 6)
-        //.attr('text-anchor', d => d._children ? 'end' : 'start')
         .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
         .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
         .text(d => d.data.name)
@@ -191,6 +121,10 @@ class LineageTree {
       const nodeUpdate = node.merge(nodeEnter)
         .transition()
         .duration(duration)
+        .attr('transform', d => `
+          rotate(${d.x * 180 / Math.PI - 90})
+          translate(${d.y},0)
+        `)
         .attr('fill-opacity', 1)
         .attr('stroke-opacity', 1);
 
@@ -227,8 +161,6 @@ class LineageTree {
 
       // Transition exiting nodes to the parent's new position.
       link.exit()
-        //.transition(transition)
-        //.remove()
         .transition()
         .duration(duration)
         .attr('d', d => {
@@ -242,12 +174,6 @@ class LineageTree {
           });
         })
         .remove();
-      /*
-      // Stash the old positions for transition.
-      root.eachBefore(d => {
-        d.x0 = d.x;
-        d.y0 = d.y;
-      });*/
     }
 
     function toggleChildren(d, clickType) {
@@ -258,8 +184,6 @@ class LineageTree {
       } else {
         d.children = d._children;
         d._children = null;
-        //d.data.children = d.data._children;
-        //d.data._children = null;
       }
 
       var type = typeof clickType == undefined ? 'node' : clickType;
