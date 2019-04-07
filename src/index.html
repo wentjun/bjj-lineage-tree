@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css" type="text/css" media="screen" charset="utf-8">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+  <div style="width:100vw;height:800px">
+    <div>
+      <button type="button" id="expand">Expand All</button>
+      <button type="button" id="collapse">Collapse</button>
+      <button type="button" id="collapse-all">Collapse All</button>
+    </div>
+    <svg id="tree"></svg>
+  </div>
+  <script src="chart.js"></script>
+  <script>
+    chart = new LineageTree();
+  </script>
+</body>
