@@ -8,13 +8,17 @@ class LineageTree {
       .then(data => {
         this.generateTree(data);
       });
-    const collapseAll = document.querySelector('button[id=collapse]');
+    const collapse = document.querySelector('button[id=collapse]');
+    collapse.addEventListener('click', event => {
+      this.collapse();
+    });
+    const collapseAll = document.querySelector('button[id=collapse-all]');
     collapseAll.addEventListener('click', event => {
-      this.collapseAll()
+      this.collapseAll();
     });
     const expandAll = document.querySelector('button[id=expand]');
     expandAll.addEventListener('click', event => {
-      this.expandAll()
+      this.expandAll();
     });
   }
 
@@ -28,7 +32,14 @@ class LineageTree {
       var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       return (v * w) / 100;
     };
-    var margin = {
+    const collapse = d => {
+      if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+      }
+    };
+    const margin = {
       top: 0,
       right: 0,
       bottom: 0,
@@ -38,16 +49,23 @@ class LineageTree {
     const height = width;
     const radius = width / 2;
 
+    // dendrogram configuration
     this.tree = d3.cluster()
       .size([2 * Math.PI, radius - 100]);
-
+    // root data
     this.root = this.tree(d3.hierarchy(data)
       .sort((a, b) => (a.height - b.height) || a.data.name.localeCompare(b.data.name)));
     this.root.children.forEach(collapse);
+    this.root.x0 = height / 2;
+    this.root.y0 = 0;
+
+    // each node represents BJJ fighter
     this.gNode = d3.select('#tree')
       .append('g')
       .attr('id', 'nodes')
       .attr('cursor', 'pointer');
+
+    // each link represents the master-disciple relationship between two BJJ fighters
     this.gLink = d3.select('#tree')
       .append('g')
       .attr('id', 'links')
@@ -56,8 +74,6 @@ class LineageTree {
       .attr('stroke-opacity', 0.4)
       .attr('stroke-width', 1.5);
     //document.body.appendChild(svg.node());
-    this.root.x0 = height / 2;
-    this.root.y0 = 0;
 
     d3.select('#tree')
       .attr('width', '100%')
@@ -66,18 +82,8 @@ class LineageTree {
 
     this.update(this.root);
 
-
-
-    function collapse(d) {
-      if (d.children) {
-        d._children = d.children;
-        d._children.forEach(collapse);
-        d.children = null;
-      }
-    }
     return d3.select('#tree')
       .node();
-
   }
 
   update(source) {
@@ -191,11 +197,27 @@ class LineageTree {
       .remove();
 
   }
-  collapseAll() {
+
+  collapse() {
     if (this.root) {
       // collapse all, but keep 'state'
       this.root._children = this.root.children;
       this.root.children = null;
+      this.update(this.root);
+    }
+  }
+
+  collapseAll() {
+    // collapse all
+    const collapse = d => {
+      if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+      }
+    }
+    if (this.root && this.root.children) {
+      collapse(this.root)
       this.update(this.root);
     }
   }
