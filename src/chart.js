@@ -39,6 +39,10 @@ class LineageTree {
         d.children = null;
       }
     };
+    const zoom = () => {
+      d3.select('#bjj-lineage')
+        .attr("transform", d3.event.transform);
+    };
     const margin = {
       top: 0,
       right: 0,
@@ -59,14 +63,25 @@ class LineageTree {
     this.root.x0 = height / 2;
     this.root.y0 = 0;
 
+    d3.select('#tree')
+      .attr('width', '100%')
+      .attr('height', '100%')
+      .attr('viewBox', `-${radius} -${radius-50} ${radius * 2} ${radius * 2}`)
+      .call(d3.zoom()
+        //.scale(0.9)
+        .scaleExtent([0.1, 3])
+        .on('zoom', zoom))
+      .append('g')
+      .attr('id', 'bjj-lineage');
+
     // each node represents BJJ fighter
-    this.gNode = d3.select('#tree')
+    this.gNode = d3.select('#bjj-lineage')
       .append('g')
       .attr('id', 'nodes')
       .attr('cursor', 'pointer');
 
     // each link represents the master-disciple relationship between two BJJ fighters
-    this.gLink = d3.select('#tree')
+    this.gLink = d3.select('#bjj-lineage')
       .append('g')
       .attr('id', 'links')
       .attr('fill', 'none')
@@ -74,11 +89,6 @@ class LineageTree {
       .attr('stroke-opacity', 0.4)
       .attr('stroke-width', 1.5);
     //document.body.appendChild(svg.node());
-
-    d3.select('#tree')
-      .attr('width', '100%')
-      .attr('height', '100%')
-      .attr('viewBox', `-${radius} -${radius-50} ${radius * 2} ${radius * 2}`);
 
     this.update(this.root);
 
