@@ -1,3 +1,12 @@
+.container {
+  width: 100vw;
+  height: 800px;
+}
+
+.menu {
+  position: fixed;
+}
+
 .node circle {
   fill: #999;
 }
