@@ -39,10 +39,12 @@ class LineageTree {
         d.children = null;
       }
     };
-    const zoom = () => {
-      d3.select('#bjj-lineage')
-        .attr("transform", d3.event.transform);
-    };
+    const zoom = d3.zoom()
+      .scaleExtent([0.1, 3])
+      .on('zoom', () => {
+        d3.select('#bjj-lineage')
+          .attr('transform', d3.event.transform)
+      });
     const margin = {
       top: 0,
       right: 0,
@@ -67,12 +69,11 @@ class LineageTree {
       .attr('width', '100%')
       .attr('height', '100%')
       .attr('viewBox', `-${radius} -${radius-50} ${radius * 2} ${radius * 2}`)
-      .call(d3.zoom()
-        //.scale(0.9)
-        .scaleExtent([0.1, 3])
-        .on('zoom', zoom))
+      .call(zoom)
+      .call(zoom.transform, d3.zoomIdentity.scale(0.7))
       .append('g')
-      .attr('id', 'bjj-lineage');
+      .attr('id', 'bjj-lineage')
+      .attr('transform', `scale(0.7,0.7)`);
 
     // each node represents BJJ fighter
     this.gNode = d3.select('#bjj-lineage')
@@ -124,9 +125,7 @@ class LineageTree {
     const duration = d3.event && d3.event.altKey ? 2500 : 250;
 
     const node = this.gNode.selectAll('g')
-      .data(nodes, function (d, i) {
-        return d.id || (d.id = ++i);
-      });
+      .data(nodes, (d, i) => d.id || (d.id = ++i));
 
     // Enter any new nodes at the parent's previous position.
     const nodeEnter = node.enter()
