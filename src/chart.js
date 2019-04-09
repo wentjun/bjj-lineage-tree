@@ -176,6 +176,7 @@ class LineageTree {
     // Enter any new links at the parent's previous position.
     const linkEnter = link.enter()
       .append('path')
+      .classed('highlight', d => d.target.highlight)
       .attr('d', d => {
         const o = {
           x: source.x0,
@@ -253,11 +254,28 @@ class LineageTree {
 
   searchFighter(event) {
     const searchTerm = event.target.value;
-    console.log(searchTerm);
-    console.log(this.root);
     const search = (d, searchTerm) => {
-      const children = (d.data.children) ? d.data.children : d.data._children;
-
+      const searchResultsList = [];
+      if (d.data.name === searchTerm) {
+        // return true;
+        console.log(d);
+      } else if (d.children || d._children) {
+        const res = undefined;
+        const children = (d.children) ? d.children : d._children;
+        for (let i = 0; i < children.length; i++) {
+          /*
+          if (children[i].data.name !== searchTerm) {
+            return search(children[i], searchTerm);
+            //break;
+          }*/
+          const found = search(children[i], searchTerm);
+          if (found) {
+            return found;
+          }
+        }
+      } else {
+        return false;
+      }
     }
 
     search(this.root, searchTerm);
