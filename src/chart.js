@@ -20,6 +20,10 @@ class LineageTree {
     expandAll.addEventListener('click', event => {
       this.expandAll();
     });
+    const searchBar = document.querySelector('input[id=search-bar]');
+    searchBar.addEventListener('keyup', event => {
+      this.searchFighter(event);
+    });
   }
 
   loadData() {
@@ -245,6 +249,18 @@ class LineageTree {
     }
     expand(this.root);
     this.update(this.root);
+  }
+
+  searchFighter(event) {
+    const searchTerm = event.target.value;
+    console.log(searchTerm);
+    console.log(this.root);
+    const search = (d, searchTerm) => {
+      const children = (d.data.children) ? d.data.children : d.data._children;
+
+    }
+
+    search(this.root, searchTerm);
   }
 
 }
