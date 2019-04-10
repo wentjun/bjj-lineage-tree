@@ -254,11 +254,12 @@ class LineageTree {
 
   searchFighter(event) {
     const searchTerm = event.target.value;
-    const search = (d, searchTerm) => {
+    const search = (d, searchTerm, path) => {
       const searchResultsList = [];
       if (d.data.name === searchTerm) {
-        // return true;
-        console.log(d);
+        // if there is a match, add node to the path and return it
+        path.push(d);
+        return path;
       } else if (d.children || d._children) {
         const res = undefined;
         const children = (d.children) ? d.children : d._children;
@@ -268,9 +269,15 @@ class LineageTree {
             return search(children[i], searchTerm);
             //break;
           }*/
-          const found = search(children[i], searchTerm);
-          if (found) {
-            return found;
+          // assume path is valid
+          path.push(d);
+          const isMatch = search(children[i], searchTerm, path);
+          if (isMatch) {
+            // if there is a match, this should return the bubbled-up path from the first if statement
+            return isMatch;
+          } else {
+            // remove if no match
+            path.pop();
           }
         }
       } else {
@@ -278,7 +285,28 @@ class LineageTree {
       }
     }
 
-    search(this.root, searchTerm);
+    const expand = paths => {
+      for (var i = 0; i < paths.length; i++) {
+        if (paths[i].id !== 1) {
+          // if not root
+          paths[i].class = 'highlight';
+          if (paths[i]._children) { //if children are hidden: open them, otherwise: don't do anything
+            paths[i].children = paths[i]._children;
+            paths[i]._children = null;
+          }
+          this.update(paths[i]);
+        }
+      }
+    }
+
+    const res = search(this.root, searchTerm, []);
+    //console.log(res)
+    if (res) {
+      //this.collapseAll();
+      console.log(res);
+      expand(res);
+      //this.update(res);
+    }
   }
 
 }
