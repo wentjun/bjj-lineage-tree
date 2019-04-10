@@ -178,9 +178,15 @@ class LineageTree {
     // Enter any new links at the parent's previous position.
     const linkEnter = link.enter()
       .append('path')
-      .classed('highlight', d => {
+      /*.classed('highlight', d => {
         console.log(d.target.highlight)
         return d.target.highlight
+      })*/
+      .style('stroke', d => {
+        console.log(d)
+        if (d.source.highlight === true) {
+          return '#d91e18';
+        }
       })
       .attr('d', d => {
         const o = {
@@ -294,7 +300,7 @@ class LineageTree {
       for (let i = 0; i < paths.length; i++) {
         if (paths[i].id !== 1) {
           // if not root
-          paths[i].highlight = true;
+          paths[i].parent.highlight = true;
           if (paths[i]._children) { //if children are hidden: open them, otherwise: don't do anything
             paths[i].children = paths[i]._children;
             paths[i]._children = null;
@@ -304,15 +310,59 @@ class LineageTree {
       }
       console.log(this.root)
     }
+    const click = d => {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      console.log(d)
+      this.update(d);
+    }
+
+    const find = (d, name) => {
+      if (d.data.name == name) {
+        while (d.parent) {
+          d = d.parent;
+          click(d); //if found open its parent
+        }
+        return;
+      }
+
+      //recursively call find function on its children
+      if (d.children) {
+        d.children.forEach(function (d) {
+          find(d, name)
+        });
+      } else if (d._children) {
+        d._children.forEach(function (d) {
+          find(d, name)
+        });
+      }
+    }
+
+    const collapse = d => {
+      if (d.children) {
+        d._children = d.children;
+        d._children.forEach(function (d1) {
+          d1.parent = d;
+          collapse(d1);
+        });
+        d.children = null;
+      }
+    }
+
 
     const res = search(this.root, searchTerm, []);
     //console.log(res)
-    if (res) {
-      //this.collapseAll();
-      console.log(res);
-      expand(res);
-      //this.update(res);
-    }
+    //if (res) {
+    //this.collapseAll();
+    collapse(this.root);
+    find(this.root, searchTerm)
+    this.update(this.root);
+    //}
   }
 
 }
