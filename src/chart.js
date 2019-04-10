@@ -172,11 +172,16 @@ class LineageTree {
 
     // Update the links…
     const link = this.gLink.selectAll('path')
-      .data(links, d => d.target.id);
+      .data(links, d => {
+        return d.target.id
+      });
     // Enter any new links at the parent's previous position.
     const linkEnter = link.enter()
       .append('path')
-      .classed('highlight', d => d.target.highlight)
+      .classed('highlight', d => {
+        console.log(d.target.highlight)
+        return d.target.highlight
+      })
       .attr('d', d => {
         const o = {
           x: source.x0,
@@ -286,10 +291,10 @@ class LineageTree {
     }
 
     const expand = paths => {
-      for (var i = 0; i < paths.length; i++) {
+      for (let i = 0; i < paths.length; i++) {
         if (paths[i].id !== 1) {
           // if not root
-          paths[i].class = 'highlight';
+          paths[i].highlight = true;
           if (paths[i]._children) { //if children are hidden: open them, otherwise: don't do anything
             paths[i].children = paths[i]._children;
             paths[i]._children = null;
@@ -297,6 +302,7 @@ class LineageTree {
           this.update(paths[i]);
         }
       }
+      console.log(this.root)
     }
 
     const res = search(this.root, searchTerm, []);
