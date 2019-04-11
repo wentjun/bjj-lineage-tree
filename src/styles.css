@@ -29,3 +29,11 @@
   stroke-opacity: 0.4;
   stroke-width: 1.5px;
 }
+
+#links > .highlight {
+  stroke: #d91e18;
+}
+
+#nodes .search-path {
+  font-weight: 900;
+}

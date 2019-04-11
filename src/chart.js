@@ -20,6 +20,10 @@ class LineageTree {
     expandAll.addEventListener('click', event => {
       this.expandAll();
     });
+    const searchBar = document.querySelector('input[id=search-bar]');
+    searchBar.addEventListener('keyup', event => {
+      this.searchFighter(event);
+    });
   }
 
   loadData() {
@@ -134,13 +138,21 @@ class LineageTree {
 
     nodeEnter.append('circle')
       .attr('r', 2.5)
-      .attr('fill', d => d._children ? '#555' : '#999');
-
+      .attr('fill', d => {
+        if (d.highlight) {
+          return '#d91e18';
+        } else if (d._children) {
+          return '#555';
+        } else {
+          return '#999';
+        }
+      });
     nodeEnter.append('text')
       .attr('dy', '0.31em')
       .attr('x', d => d.x < Math.PI === !d.children ? 6 : -6)
       .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
       .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
+      .classed('search-path', d => d.highlight)
       .text(d => d.data.name)
     /*.clone(true)
     .lower()
@@ -168,10 +180,13 @@ class LineageTree {
 
     // Update the links…
     const link = this.gLink.selectAll('path')
-      .data(links, d => d.target.id);
+      .data(links, d => {
+        return d.target.id
+      });
     // Enter any new links at the parent's previous position.
     const linkEnter = link.enter()
       .append('path')
+      .classed('highlight', d => d.target.highlight)
       .attr('d', d => {
         const o = {
           x: source.x0,
@@ -244,6 +259,104 @@ class LineageTree {
       }
     }
     expand(this.root);
+    this.update(this.root);
+  }
+
+  searchFighter(event) {
+    const searchTerm = event.target.value;
+    const search = (d, searchTerm, path) => {
+      const searchResultsList = [];
+      if (d.data.name === searchTerm) {
+        // if there is a match, add node to the path and return it
+        path.push(d);
+        return path;
+      } else if (d.children || d._children) {
+        const res = undefined;
+        const children = (d.children) ? d.children : d._children;
+        for (let i = 0; i < children.length; i++) {
+          /*
+          if (children[i].data.name !== searchTerm) {
+            return search(children[i], searchTerm);
+            //break;
+          }*/
+          // assume path is valid
+          path.push(d);
+          const isMatch = search(children[i], searchTerm, path);
+          if (isMatch) {
+            // if there is a match, this should return the bubbled-up path from the first if statement
+            return isMatch;
+          } else {
+            // remove if no match
+            path.pop();
+          }
+        }
+      } else {
+        return false;
+      }
+    }
+
+    const expand = paths => {
+      for (let i = 0; i < paths.length; i++) {
+        if (paths[i].id !== 1) {
+          // if not root
+          paths[i].parent.highlight = true;
+          if (paths[i]._children) { //if children are hidden: open them, otherwise: don't do anything
+            paths[i].children = paths[i]._children;
+            paths[i]._children = null;
+          }
+          this.update(paths[i]);
+        }
+      }
+      console.log(this.root)
+    }
+    const click = d => {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      this.update(d);
+    }
+
+    const find = (d, name) => {
+      if (d.data.name == name) {
+        while (d.parent) {
+          d.highlight = true;
+          d = d.parent;
+          click(d); //if found open its parent
+        }
+        return;
+      }
+
+      //recursively call find function on its children
+      if (d.children) {
+        d.children.forEach(function (d) {
+          find(d, name)
+        });
+      } else if (d._children) {
+        d._children.forEach(function (d) {
+          find(d, name)
+        });
+      }
+    }
+
+    const collapse = d => {
+      if (d.children) {
+        d._children = d.children;
+        d._children.forEach(function (d1) {
+          d1.parent = d;
+          collapse(d1);
+        });
+        d.children = null;
+      }
+    }
+
+    const res = search(this.root, searchTerm, []);
+    this.collapseAll();
+    collapse(this.root);
+    find(this.root, searchTerm)
     this.update(this.root);
   }
 
