@@ -30,6 +30,10 @@
   stroke-width: 1.5px;
 }
 
-.highlight {
+#links > .highlight {
   stroke: #d91e18;
+}
+
+#nodes .search-path {
+  font-weight: 900;
 }

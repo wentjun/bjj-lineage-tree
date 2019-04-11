@@ -138,13 +138,21 @@ class LineageTree {
 
     nodeEnter.append('circle')
       .attr('r', 2.5)
-      .attr('fill', d => d._children ? '#555' : '#999');
-
+      .attr('fill', d => {
+        if (d.highlight) {
+          return '#d91e18';
+        } else if (d._children) {
+          return '#555';
+        } else {
+          return '#999';
+        }
+      });
     nodeEnter.append('text')
       .attr('dy', '0.31em')
       .attr('x', d => d.x < Math.PI === !d.children ? 6 : -6)
       .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
       .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
+      .classed('search-path', d => d.highlight)
       .text(d => d.data.name)
     /*.clone(true)
     .lower()
@@ -178,16 +186,7 @@ class LineageTree {
     // Enter any new links at the parent's previous position.
     const linkEnter = link.enter()
       .append('path')
-      /*.classed('highlight', d => {
-        console.log(d.target.highlight)
-        return d.target.highlight
-      })*/
-      .style('stroke', d => {
-        console.log(d)
-        if (d.source.highlight === true) {
-          return '#d91e18';
-        }
-      })
+      .classed('highlight', d => d.target.highlight)
       .attr('d', d => {
         const o = {
           x: source.x0,
@@ -318,13 +317,13 @@ class LineageTree {
         d.children = d._children;
         d._children = null;
       }
-      console.log(d)
       this.update(d);
     }
 
     const find = (d, name) => {
       if (d.data.name == name) {
         while (d.parent) {
+          d.highlight = true;
           d = d.parent;
           click(d); //if found open its parent
         }
@@ -354,15 +353,11 @@ class LineageTree {
       }
     }
 
-
     const res = search(this.root, searchTerm, []);
-    //console.log(res)
-    //if (res) {
-    //this.collapseAll();
+    this.collapseAll();
     collapse(this.root);
     find(this.root, searchTerm)
     this.update(this.root);
-    //}
   }
 
 }
